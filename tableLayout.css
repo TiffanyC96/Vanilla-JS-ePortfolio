@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* Author: Tiffany Conrad */
+
+/* All Devices */
+th {
+    font-family: cursive;
+    font-size: 50px;
+}
+
+span {
+    font-size: 30px;
+}
+
+td {
+    border: 1px rgb(14, 58, 14) solid;
+    font-size: 150%;
+}
+
+li {
+    font-size: 75%;
+}
+
+/* Desktop */
+@media only screen and (min-width:481px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    table {
+        grid-column: 2;
+        height: 100%;
+        border: 2px darkgreen solid;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+
+}
+
+/* Phone */
+@media only screen and (max-width:480px) {
+    body {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    table {
+        width: 98%;
+        font-size: 115%;
+        border-collapse: collapse;
+    }
+
+    a {
+        font-size: 125%;
+        margin-top: 5px;
+    }
+}

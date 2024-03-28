@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/* Author: Tiffany Conrad */
+
+/* Desktops and Tablets */
+@media only screen and (min-width:481px) {
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    nav {
+        border: none;
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    body {
+        width: 98%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 10% 7% 2fr 2fr 1fr 5%;
+    }
+
+    header {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    nav {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+
+    footer {
+        grid-column: 1 / span 3;
+        grid-row: 6;
+    }
+
+    article {
+        grid-column: 2;
+    }
+
+    img {
+        grid-column: 2;
+        grid-row: 3;
+        margin: auto;
+        margin-top: 3%;
+    }
+
+
+
+    #LT,
+    #ST,
+    #prog,
+    #soft {
+        grid-row: 3;
+        margin: 50px;
+    }
+
+    #LT {
+        grid-column: 1;
+    }
+
+    #ST {
+        grid-column: 3;
+    }
+
+    #web {
+        grid-column: 2;
+        text-align: center;
+    }
+
+
+
+    #navicon {
+        display: none;
+    }
+
+
+
+    #name {
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+
+    #name table {
+        width: 98%;
+    }
+
+    #name table td {
+        height: 200%;
+    }
+
+    #summary {
+        grid-row: 4;
+        text-align: center;
+        grid-column: 1 / span 2;
+    }
+
+
+    article {
+        text-align: center;
+        margin: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        flex: 1 0 100px;
+    }
+
+    #skills,
+    #education #projects {
+        text-align: center;
+    }
+
+    #education {
+        grid-column: 1 / span 2;
+        margin: auto;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    textarea {
+        height: 350px;
+    }
+
+    #socials {
+        grid-column: 3;
+        grid-row: 3 / span 5;
+        width: 98%;
+        text-align: center;
+    }
+
+    #contacts {
+        grid-column: 2;
+        grid-row: 3 / span 4;
+        width: 75%;
+        text-align: center;
+        justify-self: end;
+        margin: auto;
+        margin-right: 9%;
+    }
+
+    #contacts>h2 {
+        font-size: 150%;
+        padding-bottom: 4%;
+        padding-top: 5%;
+    }
+
+    #contacts p,
+    #contacts a {
+        padding-bottom: 2%;
+    }
+
+    #headshot {
+        height: 25em;
+    }
+}
+
+/* Mobile Phones */
+@media only screen and (max-width:480px) {
+    body {
+        width: auto;
+        display: flex;
+        flex-flow: column wrap;
+        font-size: smaller;
+        text-align: center;
+    }
+
+    header,
+    footer {
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    article {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #socials {
+        display: none;
+    }
+
+    #contacts {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+
+
+
+    iframe {
+        width: 98%;
+        ;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #navicon {
+        height: auto;
+        width: 40px;
+    }
+
+    nav {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    li {
+        font-size: smaller;
+
+    }
+
+    a#navicon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    a#navicon:hover+ul,
+    nav ul:hover {
+        display: block;
+    }
+
+
+}

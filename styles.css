@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* Author: Tiffany Conrad */
+
+html {
+    background-color: #afa7a4;
+}
+
+body {
+    background-color: #d6cecb;
+    color: #2a4a3f;
+}
+
+
+nav {
+    background-color: #6d8474;
+    font-size: 175%;
+}
+
+nav a {
+    color: #2a4a3f;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #afa7a4;
+}
+
+
+nav ul li {
+    font-size: 125%;
+}
+
+article h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 400%;
+}
+
+article h3 {
+    font-size: 200%;
+    font-family: 'Pacifico', cursive;
+}
+
+article p {
+    font-size: 150%
+}
+
+#headshot {
+    border-radius: 225px;
+}
+
+img {
+    border-radius: 15%;
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: #b08c8c;
+    color: #4a5350;
+}
+
+header {
+    font-size: 200%;
+}
+
+a img {
+    border-radius: 0;
+}
+
+#name table td {
+    border-right: #2a4a3f 2px solid;
+}
+
+#summary {
+    border-bottom: #2a4a3f solid 3px;
+
+}
+
+#ST,
+#LT,
+#web,
+#soft,
+#prog {
+    font-size: 150%;
+
+}
+
+#ST li,
+#LT li,
+#web li,
+#prog li,
+#soft li {
+    list-style-type: square;
+}
+
+#socials {
+    background-color: #afa7a4;
+    font-size: 120%;
+}
+
+
+footer {
+    font-size: 35px;
+}
+
+
+
+#contacts {
+    background-color: rgba(86, 126, 96, 0.5);
+    border-radius: 15%;
+    font-size: 175%;
+}
+
+@media only screen and (min-width:481px) {
+    #contact {
+        background-image: url("eucalyptus.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
